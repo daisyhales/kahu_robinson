@@ -1,0 +1,3 @@
+matipo==1.1.0
+jupyterlab_panel_server==1.0.0
+bokeh==3.9.*

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "daisy_wheels"
+version = "0.1.0"
+description = "Daisy MRI helper package"
+authors = [
+    {name = "Daisy Hales"}
+]
+
+dependencies = [
+    "numpy",
+    "panel",
+    "pyyaml",
+    "napari",
+    "plotly",
+    "pandas",
+    "optuna",
+    "nest_asyncio"
+]
+
+[tool.setuptools.packages.find]
+[tool.setuptools.package-data]
+daisy_wheels = ["*.yaml", "*.npz"]
+
+where = ["."]

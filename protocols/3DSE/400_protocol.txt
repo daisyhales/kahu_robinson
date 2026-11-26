@@ -1,0 +1,23 @@
+{
+    "protocols": "160_protocol.txt",
+    "protocol_name": "400_protocol",
+    "n_scans": 1,
+    "t_echo": 20000,
+    "TR": 5,
+    "t_ramp": 500,
+    "t_crush": 1,
+    "t_spoil": 1,
+    "t_phase": 2000,
+    "spectral_width": 50,
+    "rx_chan": 0,
+    "tx_chan": 0,
+    "select_g_read": "X",
+    "FOV_read": 400,
+    "resolution_read": 96,
+    "select_g_phase1": "Y",
+    "FOV_phase1": 400,
+    "resolution_phase1": 96,
+    "select_g_phase2": "Z",
+    "FOV_phase2": 160,
+    "resolution_phase2": 96
+}

@@ -1,0 +1,5 @@
+soft_pulse_type: SLR
+select_g_slice: Z
+slice_thickness: 5
+spectral_width: 50
+t_ramp: 250

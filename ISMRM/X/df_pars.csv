@@ -1,0 +1,24 @@
+Parameter,Value
+OPT_AXIS,X
+n_scans,1
+a_pulse,0.45
+t_pulse,2.9999999999999997e-05
+t_dw,1e-05
+n_samples,100
+t_acq_delay,0.0001
+t_grad,10.0
+t_ramp,0.001
+t_wait,0.008
+n_pulses,30
+t_end,10.0
+t_next,5
+g_val,0.1
+tx_chan,0
+rx_chan_list,"(3, 0, 1)"
+pre_emphasis,True
+b0,True
+file_pars,C:\Users\halesda\OneDrive - Victoria University of Wellington - STAFF\Desktop\kahu-workspace\ISMRM/
+file_cals,C:\Users\halesda\OneDrive - Victoria University of Wellington - STAFF\Desktop\kahu-workspace\globals/
+d_r,5e-2
+d_c,0
+d_l,-5e-2

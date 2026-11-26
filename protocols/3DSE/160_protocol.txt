@@ -1,0 +1,23 @@
+{
+    "protocols": null,
+    "protocol_name": "160_protocol",
+    "n_scans": 1,
+    "t_echo": 20000,
+    "TR": 1,
+    "t_ramp": 500,
+    "t_crush": 1,
+    "t_spoil": 1,
+    "t_phase": 2000,
+    "spectral_width": 50,
+    "rx_chan": 0,
+    "tx_chan": 0,
+    "select_g_read": "X",
+    "FOV_read": 160,
+    "resolution_read": 96,
+    "select_g_phase1": "Y",
+    "FOV_phase1": 160,
+    "resolution_phase1": 96,
+    "select_g_phase2": "Z",
+    "FOV_phase2": 160,
+    "resolution_phase2": 96
+}

@@ -1,0 +1,13 @@
+# scan_type : save folder -- for protocols and data saving and loading
+2DSE_multiSLR: '2DSE'
+3DSE_FOV: '3DSE'
+1DSE_FOV: 'hard_1DSE'
+rare_pe: 'RARE2D'
+FID: 'Shim'
+pulse_cal_SLR_tab: 'Soft_Pulse_Calibration'
+pulse_cal_SLR: 'Soft_Pulse_Calibration'
+B0_shim: 'B0_Calibration'
+measure_ec: "Measure_EC"
+fitting_ec: "Measure_EC"
+compile_ec: "Compile_EC"
+optimise_ec: "Measure_EC"

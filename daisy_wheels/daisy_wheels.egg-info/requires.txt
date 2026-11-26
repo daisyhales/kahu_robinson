@@ -1,0 +1,5 @@
+numpy
+panel
+pyyaml
+napari
+plotly

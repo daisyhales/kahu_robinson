@@ -1,0 +1,4 @@
+# distances of coils in meters
+d_r: 5e-2
+d_c: 0
+d_l: -5e-2

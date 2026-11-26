@@ -1,0 +1,23 @@
+{
+    "protocols": "start_up_setting.txt",
+    "protocol_name": "start_up_setting",
+    "probe_axis": "Y",
+    "n_scans": 1,
+    "flip_angle": 4.5,
+    "n_pulses": 30,
+    "spectral_width": 100,
+    "apodisation": 100,
+    "t_acq_delay": 100,
+    "t_grad": 10.0,
+    "t_ramp": 250,
+    "t_wait": 8,
+    "t_end": 10,
+    "t_next": 5,
+    "select_g": "Y",
+    "g_val": 0.1,
+    "resolution": 100,
+    "tx_chan": 0,
+    "rx_l": 1,
+    "rx_c": 0,
+    "rx_r": 3
+}
