@@ -1,7 +1,7 @@
 <!--- Note: right-click->Open With->Markdown Preview for ideal viewing -->
-# Kāhu Desktop Environment
+# Kāhu Robinson 1.5T MR Imaging and Eddy Current Compensation Software
 
-    git clone --recurse-submodules git@github.com:Resonint/kahu-desktop.git
+    git clone git@github.com:daisyhales/kahu_robinson.git
 
 Run all cells in *install.ipynb* to install *matipo* python library and create the default configuration.
 Restart the Jupyterlab session after installing.
