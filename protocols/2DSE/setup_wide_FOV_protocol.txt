@@ -3,7 +3,7 @@
     "protocol_name": "setup_wide_FOV_protocol",
     "n_scans": 1,
     "t_echo": 20000,
-    "TR": 1,
+    "TR": 0.5,
     "t_ramp": 250,
     "t_crush": 1,
     "t_spoil": 1,

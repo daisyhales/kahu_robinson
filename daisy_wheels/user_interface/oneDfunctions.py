@@ -820,10 +820,8 @@ class oneDfunctions:
                 with open(f"{file}/neg_gstrength.yaml", "r") as f:
                     g_dict = yaml.safe_load(f)
             else: 
-                with open(f"{file}/pos_gstrength.yaml", "r") as f:
-                    g_dict = yaml.safe_load(f)
+                g_str = self.g.get_g_strength(None, select_xyz)
 
-            g_str = g_dict[select_xyz]
             geff = g_str * grad_value
             position_m = freq/geff
             

@@ -305,7 +305,6 @@ class general_functions:
         with open(f"{file}/par_spulse.yaml", "w") as f:
             yaml.safe_dump(new_pars, f, sort_keys=False)
             
-
     @staticmethod
     def change_offsets(new_offsets, file = None):
         """
@@ -340,7 +339,7 @@ class general_functions:
         if file == None:
             file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/globals"
 
-        with open(f"{file}/pos_gstrength.yaml", "r") as f:
+        with open(f"{file}/g_hzpm_slope.yaml", "r") as f:
             g_dict = yaml.safe_load(f)
 
         return g_dict[axis]
