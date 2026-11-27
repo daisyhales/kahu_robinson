@@ -244,7 +244,7 @@ def get_exp(file = GLOBALS_DIR, b0 = "n", opt = "n", compare = "n", file_parsE =
         raise ValueError(e)
 
     
-def get_calibrations(file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/notebooks/daisy/final_versions/globals"):
+def get_calibrations(file = GLOBALS_DIR):
     """
     """
     try:
@@ -261,7 +261,7 @@ def get_calibrations(file = "C:/Users/halesda/OneDrive - Victoria University of 
 
 
 
-def add_b0(g_preemph_g, params_dict_b0, dt = 10e-6, file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/notebooks/daisy/final_versions/globals"): 
+def add_b0(g_preemph_g, params_dict_b0, dt = 10e-6, file = GLOBALS_DIR): 
     """
     """
     # log.debug(f"B0 params: {params_dict_b0}")

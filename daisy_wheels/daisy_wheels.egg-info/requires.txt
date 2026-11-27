@@ -3,3 +3,6 @@ panel
 pyyaml
 napari
 plotly
+pandas
+optuna
+nest_asyncio

@@ -516,7 +516,7 @@ class run_pulse_sequence:
             
         
         if file == None:
-            file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/globals"
+            file = GLOBALS_DIR
         
         try:
             scan_parameters = self.create_scan_parameters(widget_dict, non_input_params, scan_type, file = file)
@@ -614,8 +614,6 @@ class run_pulse_sequence:
         
         # ---------- load in the pulse seq file and parameters ---------
         try:
-            if pre_file == None:
-                pre_file = "\\Users\\halesda\\OneDrive - Victoria University of Wellington - STAFF\\Desktop\\kahu-workspace\\notebooks\\daisy\\"
 
             self.g.plotlog_msg(f"file: {pre_file+pulse_file}")
             seq = Sequence(pre_file + pulse_file)
@@ -672,7 +670,7 @@ class run_pulse_sequence:
         
         """
         if file == None:
-            file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/globals"
+            file = GLOBALS_DIR
         
         try:
             scan_parameters = self.create_scan_parameters(widget_dict, non_input_params, scan_type, file = file)
@@ -769,8 +767,6 @@ class run_pulse_sequence:
         
         # ---------- load in the pulse seq file and parameters ---------
         try:
-            if pre_file == None:
-                pre_file = "\\Users\\halesda\\OneDrive - Victoria University of Wellington - STAFF\\Desktop\\kahu-workspace\\notebooks\\daisy\\"
             self.g.seq_on = True
             self.g.log_msg(f"file: {pre_file+pulse_file}")
             seq = Sequence(pre_file + pulse_file)

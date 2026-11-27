@@ -814,7 +814,7 @@ class oneDfunctions:
         else:
 
             if file == None:
-                file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/globals"
+                file = GLOBALS_DIR
         
             if grad_value < 0:
                 with open(f"{file}/neg_gstrength.yaml", "r") as f:

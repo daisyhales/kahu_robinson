@@ -26,8 +26,8 @@ from daisy_wheels.user_interface.panel import panel_layout
 from daisy_wheels.user_interface.threeDfunctions import threeDfunctions
 from daisy_wheels.user_interface.buttons.btn_control import ButtonController
 
-file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/notebooks/daisy/final_versions/globals" # where the global parameters are
-pre_file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/notebooks/daisy/final_versions/soft_pulse_cal/" # where the pulse file lives
+file = GLOBALS_DIR # where the global parameters are
+pre_file = GLOBALS_DIR+"soft_pulse_cal/" # where the pulse file lives
 
 p = panel_functions(file = file)
 all_pns = panes() # using the () will allow the self parameters to be used

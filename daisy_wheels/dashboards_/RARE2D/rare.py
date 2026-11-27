@@ -30,7 +30,7 @@ from panel.io.state import state
 
 pulse_file = general_functions.get_yaml_info(info_name = 'seqnames.yaml', file = GLOBALS_DIR)["rare"] 
 
-file = general_functions.get_yaml_info(info_name = 'file.yaml', file = GLOBALS_DIR)["file"] # where you want the global parameters to be taken from 
+file = GLOBALS_DIR # where you want the global parameters to be taken from 
 pre_file = general_functions.get_yaml_info(info_name = 'prefiles.yaml', file = GLOBALS_DIR)["rare"] # where the pulse file lives
 
 p = panel_functions(file = file)
@@ -67,7 +67,6 @@ button_list = ['save', 'run', 'abort', 'load_protocol', 'save_protocol']
 n = 256
 f = 220
 
-file_start = r"C:\Users\halesda\OneDrive - Victoria University of Wellington - STAFF\Desktop\kahu-workspace\notebooks\daisy\kahu_eddy"
 change_vals = {"n_scans": 2, "FOV_read": 200, "FOV_phase1": 340,"spectral_width":50, "slice_thickness": 5,  "resolution_read": n,"resolution_phase1": n,
                "t_crush": 1, "t_ramp": 500, "ft_e": 20,"TR": 1, "n_ETL": 8,  'num_slices':1, 
 

@@ -30,7 +30,7 @@ from panel.io.state import state
 
 pulse_file = general_functions.get_yaml_info(info_name = 'seqnames.yaml', file = GLOBALS_DIR)["2dse"]
 
-file = general_functions.get_yaml_info(info_name = 'file.yaml', file = GLOBALS_DIR)["file"] # where you want the global parameters to be taken from 
+file = GLOBALS_DIR # where you want the global parameters to be taken from 
 pre_file = general_functions.get_yaml_info(info_name = 'prefiles.yaml', file = GLOBALS_DIR)["2dse"] # where the pulse file lives
 
 

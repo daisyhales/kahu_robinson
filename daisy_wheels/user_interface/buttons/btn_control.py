@@ -7,7 +7,7 @@ import json
 import numpy as np
 import os
 import yaml
-from matipo import SEQUENCE_DIR, GLOBALS_DIR
+from matipo import SEQUENCE_DIR, GLOBALS_DIR, DATA_DIR
 import pandas as pd
 from user_interface.general import general_functions
 from user_interface.panes import panes
@@ -467,7 +467,7 @@ class ButtonController:
             t = datetime.now().strftime("%H-%M")
             filename = f"{self.scan_type}_run{self.total_runs}_{today}_{t}"
 
-        save_dir = Path(f"C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/data/{self.save_folder}")
+        save_dir = Path(f"{DATA_DIR}/{self.save_folder}")
         save_dir.mkdir(exist_ok=True)
 
         path = save_dir / f"{filename}.npz"

@@ -238,7 +238,7 @@ def combine_g_ideal(g_list, t_list, rf_list, f_list, acq_list, phase_list):
 
 
 
-def get_exp(file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/notebooks/daisy/kahu_eddy/", b0 = "n"):
+def get_exp(file = GLOBALS_DIR, b0 = "n"):
     """
     """
 
@@ -264,7 +264,7 @@ def get_exp(file = "C:/Users/halesda/OneDrive - Victoria University of Wellingto
 
 
     
-def get_calibrations(file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/notebooks/daisy/final_versions/globals"):
+def get_calibrations(file = GLOBALS_DIR):
     """
     """
     try:
@@ -281,7 +281,7 @@ def get_calibrations(file = "C:/Users/halesda/OneDrive - Victoria University of 
 
 
 
-def add_b0(g_preemph_g, params_dict_b0, dt = 10e-6, file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/notebooks/daisy/final_versions/globals", factor = 1): 
+def add_b0(g_preemph_g, params_dict_b0, dt = 10e-6, file = GLOBALS_DIR, factor = 1): 
     """
     """
     # log.debug(f"B0 params: {params_dict_b0}")
@@ -553,9 +553,9 @@ PARDEF = [
     ParDef('t_spoil', float, 1e-3, unit='s'),
     ParDef('rx_chan', int, 0, min=0, max=3, unit=''),#
     ParDef('tx_chan', int, 0, min=0, max=1, unit=''),
-    ParDef('file_cals', str, "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/globals/"),
-    ParDef('file_parsE', str, "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/notebooks/daisy/kahu_eddy/"),
-    ParDef('file_parsB', str, "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/notebooks/daisy/kahu_eddy/"),
+    ParDef('file_cals', str, GLOBALS_DIR),
+    ParDef('file_parsE', str, GLOBALS_DIR),
+    ParDef('file_parsB', str, GLOBALS_DIR),
 ]
 
 # Create parameter set type (must be named 'ParameterSet')

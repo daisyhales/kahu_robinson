@@ -8,3 +8,6 @@ Requires-Dist: panel
 Requires-Dist: pyyaml
 Requires-Dist: napari
 Requires-Dist: plotly
+Requires-Dist: pandas
+Requires-Dist: optuna
+Requires-Dist: nest_asyncio

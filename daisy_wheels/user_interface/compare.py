@@ -244,7 +244,7 @@ class Compare:
             plt.tight_layout()
             plt.show()
             
-            with open("C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/notebooks/daisy/kahu_eddy/pre_emph_eddy/inv_laplace/g_hzpm_slope.yaml", "r") as f:
+            with open(GLOBALS_DIR+"g_hzpm_slope.yaml", "r") as f:
                 cal_data = yaml.safe_load(f)
 
             g_hzpm = cal_data[axis]*seq_params["g_val"]
@@ -340,7 +340,7 @@ class Compare:
         
         """
         if file == None:
-            file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/globals"
+            file = GLOBALS_DIR
     
         if info_name == None:
             info_name = 'shims'
