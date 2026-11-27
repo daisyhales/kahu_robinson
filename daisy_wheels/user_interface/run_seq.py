@@ -615,8 +615,8 @@ class run_pulse_sequence:
         # ---------- load in the pulse seq file and parameters ---------
         try:
 
-            self.g.plotlog_msg(f"file: {pre_file+pulse_file}")
-            seq = Sequence(pre_file + pulse_file)
+            self.g.plotlog_msg(f"file: {GLOBALS_DIR+'../'+pre_file+pulse_file}")
+            seq = Sequence(GLOBALS_DIR+'../'+pre_file + pulse_file)
             seq.loadpar(GLOBALS_DIR+'frequency_tx0.yaml')
             if scan_type != "FID":
                 seq.loadpar(GLOBALS_DIR+'shims.yaml')
@@ -768,8 +768,8 @@ class run_pulse_sequence:
         # ---------- load in the pulse seq file and parameters ---------
         try:
             self.g.seq_on = True
-            self.g.log_msg(f"file: {pre_file+pulse_file}")
-            seq = Sequence(pre_file + pulse_file)
+            self.g.log_msg(f"file: {GLOBALS_DIR+'../'+pre_file+pulse_file}")
+            seq = Sequence(GLOBALS_DIR+'../'+pre_file + pulse_file)
             seq.loadpar(GLOBALS_DIR+'frequency_tx0.yaml')
             if scan_type != "FID":
                 seq.loadpar(GLOBALS_DIR+'shims.yaml')

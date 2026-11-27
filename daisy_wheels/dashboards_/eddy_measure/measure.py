@@ -24,7 +24,7 @@ g = general_functions(all_pns)
 
 
 g_ZERO = np.array([0, 0, 0])
-file = g.get_yaml_info(info_name = 'file.yaml', file = GLOBALS_DIR)["file"] # where you want the global parameters to be taken from 
+file = GLOBALS_DIR # where you want the global parameters to be taken from 
 params = g.get_yaml_info(info_name = "current_cals", file = file)
 G_MAX = [params["xgrad"], params["ygrad"], params["zgrad"]]
 B0_MAX = [params["b0grad"]]

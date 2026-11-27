@@ -16,7 +16,7 @@ logging.basicConfig()
 log = logging.getLogger(__name__)
 log.setLevel(logging.DEBUG)
 
-file = g.get_yaml_info(info_name = 'file.yaml', file = GLOBALS_DIR)["file"] # where you want the global parameters to be taken from 
+file = GLOBALS_DIR # where you want the global parameters to be taken from 
 params = g.get_yaml_info(info_name = "current_cals", file = file)
 
 # Define input parameters (must be named 'PARDEF')
