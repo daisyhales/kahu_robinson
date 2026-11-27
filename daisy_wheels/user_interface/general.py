@@ -87,7 +87,7 @@ class general_functions:
         
         """
         if file == None:
-            file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/globals"
+            file = GLOBALS_DIR
  
         if info_name == None:
             info_name = 'shims'
@@ -215,7 +215,7 @@ class general_functions:
         into the 3_lobe yaml filein global functions 
         """
         if file == None:
-            file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/globals"
+            file = GLOBALS_DIR
  
         with open(f"{file}/3_lobe.yaml", "r") as f:
             rf_file = yaml.safe_load(f)
@@ -236,7 +236,7 @@ class general_functions:
         into the 5_lobe yaml filein global functions         
         """
         if file == None:
-            file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/globals"
+            file = GLOBALS_DIR
  
         with open(f"{file}/5_lobe.yaml", "r") as f:
            rf_file = yaml.safe_load(f)
@@ -256,7 +256,7 @@ class general_functions:
         into the 5_lobe yaml filein global functions         
         """
         if file == None:
-            file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/globals"
+            file = GLOBALS_DIR
  
         with open(f"{file}/B0_calibration.yaml", "r") as f:
            B0_c = yaml.safe_load(f)
@@ -274,7 +274,7 @@ class general_functions:
         into the SLR yaml filein global functions         
         """
         if file == None:
-            file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/globals"
+            file = GLOBALS_DIR
  
         with open(f"{file}/SLR.yaml", "r") as f:
            rf_file = yaml.safe_load(f)
@@ -299,7 +299,7 @@ class general_functions:
                 (should be stored in a globals file on your kahu workspace)
         """
         if file == None:
-            file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/globals"
+            file = GLOBALS_DIR
 
         
         with open(f"{file}/par_spulse.yaml", "w") as f:
@@ -318,7 +318,7 @@ class general_functions:
                 (should be stored in a globals file on your kahu workspace)
         """
         if file == None:
-            file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/globals"
+            file = GLOBALS_DIR
  
         with open(f"{file}/shims.yaml", "r") as f:
             offsets = yaml.safe_load(f)
@@ -337,7 +337,7 @@ class general_functions:
         """
         
         if file == None:
-            file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/globals"
+            file = GLOBALS_DIR
 
         with open(f"{file}/g_hzpm_slope.yaml", "r") as f:
             g_dict = yaml.safe_load(f)

@@ -24,7 +24,7 @@ g = general_functions(all_pns)
 
 
 g_ZERO = np.array([0, 0, 0])
-file = g.get_yaml_info(info_name = 'file.yaml', file = GLOBALS_DIR)["file"] # where you want the global parameters to be taken from 
+file = GLOBALS_DIR # where you want the global parameters to be taken from 
 params = g.get_yaml_info(info_name = "current_cals", file = file)
 G_MAX = [params["xgrad"], params["ygrad"], params["zgrad"]]
 B0_MAX = [params["b0grad"]]
@@ -244,7 +244,7 @@ def get_exp(file = GLOBALS_DIR, b0 = "n", opt = "n", compare = "n", file_parsE =
         raise ValueError(e)
 
     
-def get_calibrations(file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/notebooks/daisy/final_versions/globals"):
+def get_calibrations(file = GLOBALS_DIR):
     """
     """
     try:
@@ -261,7 +261,7 @@ def get_calibrations(file = "C:/Users/halesda/OneDrive - Victoria University of 
 
 
 
-def add_b0(g_preemph_g, params_dict_b0, dt = 10e-6, file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/notebooks/daisy/final_versions/globals"): 
+def add_b0(g_preemph_g, params_dict_b0, dt = 10e-6, file = GLOBALS_DIR): 
     """
     """
     # log.debug(f"B0 params: {params_dict_b0}")

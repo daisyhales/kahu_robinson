@@ -28,7 +28,7 @@ from pathlib import Path
 from datetime import date, datetime
 from panel.io.state import state
 
-file = general_functions.get_yaml_info(info_name = 'file.yaml', file = GLOBALS_DIR)["file"] # where you want the global parameters to be taken from 
+file = GLOBALS_DIR # where you want the global parameters to be taken from 
 
 
 p = panel_functions(file = file)

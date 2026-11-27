@@ -63,7 +63,7 @@ class Optimiser:
         
         """
         if file == None:
-            file = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/globals"
+            file = GLOBALS_DIR
     
         if info_name == None:
             info_name = 'shims'

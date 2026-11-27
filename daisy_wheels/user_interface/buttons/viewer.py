@@ -21,7 +21,7 @@ from bokeh.palettes import Greys256
 from bokeh.plotting import figure
 from scipy.signal import chirp, find_peaks, peak_widths
 
-from matipo import GLOBALS_DIR, SEQUENCE_DIR
+from matipo import GLOBALS_DIR, SEQUENCE_DIR, DATA_DIR
 from matipo.sequence import Sequence
 from matipo.util.fft import fft_reconstruction, get_freq_spectrum
 
@@ -77,7 +77,7 @@ class ViewerButtons:
 
     @staticmethod
     def widget_get_files(folder_name):
-        data_path = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/data/"
+        data_path = DATA_DIR
         folder_path = Path(data_path) / folder_name
         files = []
 
@@ -162,7 +162,7 @@ class ViewerButtons:
         """
         finds the file requested and loads the scan information and kdata into global variables
         """
-        start_path = "C:/Users/halesda/OneDrive - Victoria University of Wellington - STAFF/Desktop/kahu-workspace/data/"
+        start_path = DATA_DIR
         if self.dimension == 1:
             fileheader = self.widget_dict["select_folder1"].value
             file_title = self.widget_dict["select_file1"].value

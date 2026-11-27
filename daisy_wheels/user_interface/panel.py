@@ -317,21 +317,21 @@ class panel_functions:
                          "fileheader_rare": {
                                 "widget_type": "TextInput",
                                 "name": "File Header:",
-                                "value": r'C:\Users\halesda\OneDrive - Victoria University of Wellington - STAFF\Desktop\kahu-workspace\notebooks\daisy\rare\Panel\kdata',
+                                "value": '',
                                 "placeholder": 'Enter file header...',
                                  "sizing_mode": "stretch_width"
                             },    
                         "fileheader_2d": {
                                 "widget_type": "TextInput",
                                 "name": "File Header:",
-                                "value": r'C:\Users\halesda\OneDrive - Victoria University of Wellington - STAFF\Desktop\kahu-workspace\notebooks\daisy\spin_echos\_2DSE\Panel\kdata',
+                                "value": '',
                                 "placeholder": 'Enter file header...',
                                  "sizing_mode": "stretch_width"
                             },    
                          "fileheader": {
                                 "widget_type": "TextInput",
                                 "name": "File Header:",
-                                "value": r'C:\Users\halesda\OneDrive - Victoria University of Wellington - STAFF\Desktop\kahu-workspace\notebooks\daisy\spin_echos\_2DSE\kdata',
+                                "value": '',
                                 "placeholder": 'Enter file header...',
                                  "sizing_mode": "stretch_width"
                             },     

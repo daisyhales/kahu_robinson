@@ -30,7 +30,7 @@ from panel.io.state import state
 
 pulse_file = general_functions.get_yaml_info(info_name = 'seqnames.yaml', file = GLOBALS_DIR)["measure_ec"] 
 
-file = general_functions.get_yaml_info(info_name = 'file.yaml', file = GLOBALS_DIR)["file"] # where you want the global parameters to be taken from 
+file = GLOBALS_DIR # where you want the global parameters to be taken from 
 pre_file = general_functions.get_yaml_info(info_name = 'prefiles.yaml', file = GLOBALS_DIR)["measure_ec"] # where the pulse file lives
 
 p = panel_functions(file = file)
@@ -88,7 +88,6 @@ button_list = ['save', 'abort', 'load_protocol', 'save_protocol', "run_nope", "r
 # n = 256
 # f = 220
 
-# file_start = r"C:\Users\halesda\OneDrive - Victoria University of Wellington - STAFF\Desktop\kahu-workspace\notebooks\daisy\kahu_eddy"
 change_vals = {"spectral_width": 100, 
                 "resolution": 100, 
                 "t_acq_delay": 100, 
