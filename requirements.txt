@@ -2,3 +2,4 @@ matipo==1.1.0
 jupyterlab_panel_server==1.0.0
 bokeh==3.9.*
 napari[pyqt6]==0.9.*
+pyqt6==6.8.*

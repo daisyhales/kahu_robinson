@@ -27,6 +27,6 @@
     "slice_separation": 8,
     "num_slices": 1,
     "autosave": true,
-    "filepath_E": "eddy_E.yaml",
-    "filepath_B": "eddy_B0.yaml"
+    "filepath_E": "globals/eddy_E.yaml",
+    "filepath_B": "globals/eddy_B0.yaml"
 }
